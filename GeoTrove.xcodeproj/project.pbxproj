@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FDF2542BA7A1C400952BEE /* GeoTroveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2532BA7A1C400952BEE /* GeoTroveApp.swift */; };
+		52FDF2562BA7A1C400952BEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2552BA7A1C400952BEE /* ContentView.swift */; };
+		52FDF2582BA7A1C500952BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FDF2572BA7A1C500952BEE /* Assets.xcassets */; };
+		52FDF25C2BA7A1C500952BEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FDF25B2BA7A1C500952BEE /* Preview Assets.xcassets */; };
+		52FDF2652BA7A23600952BEE /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2632BA7A23600952BEE /* Layer.swift */; };
+		52FDF2662BA7A23600952BEE /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2642BA7A23600952BEE /* Field.swift */; };
+		52FDF2682BA7A46700952BEE /* DataFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2672BA7A46700952BEE /* DataFeature.swift */; };
+		52FDF26B2BA7A48400952BEE /* GEOSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 52FDF26A2BA7A48400952BEE /* GEOSwift */; };
+		52FDF26E2BA7A49500952BEE /* GEOSwiftMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52FDF26D2BA7A49500952BEE /* GEOSwiftMapKit */; };
+		52FDF2722BA7AE1700952BEE /* GTMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2712BA7AE1700952BEE /* GTMapView.swift */; };
+		52FDF2742BA7B52F00952BEE /* GTSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2732BA7B52F00952BEE /* GTSettingsView.swift */; };
+		52FDF2762BA7BAAD00952BEE /* AddLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2752BA7BAAD00952BEE /* AddLayerView.swift */; };
+		52FDF2782BA7BF3100952BEE /* LayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2772BA7BF3100952BEE /* LayerType.swift */; };
+		52FDF27A2BA7CDCD00952BEE /* GTLayerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2792BA7CDCD00952BEE /* GTLayerPickerView.swift */; };
+		52FDF27D2BACF8A200952BEE /* GEOSwift+MapKit+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF27C2BACF8A200952BEE /* GEOSwift+MapKit+SwiftUI.swift */; };
+		52FDF27F2BAF852100952BEE /* GTLayerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF27E2BAF852100952BEE /* GTLayerSettingsView.swift */; };
+		52FDF2812BAF91D600952BEE /* GTFieldSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2802BAF91D600952BEE /* GTFieldSettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5280795F2BB8B3FF00874FBA /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52FDF2502BA7A1C400952BEE /* GeoTrove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTrove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FDF2532BA7A1C400952BEE /* GeoTroveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTroveApp.swift; sourceTree = "<group>"; };
+		52FDF2552BA7A1C400952BEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52FDF2572BA7A1C500952BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FDF2592BA7A1C500952BEE /* GeoTrove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeoTrove.entitlements; sourceTree = "<group>"; };
+		52FDF25B2BA7A1C500952BEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52FDF2632BA7A23600952BEE /* Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		52FDF2642BA7A23600952BEE /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		52FDF2672BA7A46700952BEE /* DataFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFeature.swift; sourceTree = "<group>"; };
+		52FDF26F2BA7ACAA00952BEE /* GeoTrove-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTrove-Info.plist"; sourceTree = SOURCE_ROOT; };
+		52FDF2712BA7AE1700952BEE /* GTMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTMapView.swift; sourceTree = "<group>"; };
+		52FDF2732BA7B52F00952BEE /* GTSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTSettingsView.swift; sourceTree = "<group>"; };
+		52FDF2752BA7BAAD00952BEE /* AddLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLayerView.swift; sourceTree = "<group>"; };
+		52FDF2772BA7BF3100952BEE /* LayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerType.swift; sourceTree = "<group>"; };
+		52FDF2792BA7CDCD00952BEE /* GTLayerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTLayerPickerView.swift; sourceTree = "<group>"; };
+		52FDF27C2BACF8A200952BEE /* GEOSwift+MapKit+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GEOSwift+MapKit+SwiftUI.swift"; sourceTree = "<group>"; };
+		52FDF27E2BAF852100952BEE /* GTLayerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTLayerSettingsView.swift; sourceTree = "<group>"; };
+		52FDF2802BAF91D600952BEE /* GTFieldSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTFieldSettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FDF24D2BA7A1C400952BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FDF26E2BA7A49500952BEE /* GEOSwiftMapKit in Frameworks */,
+				52FDF26B2BA7A48400952BEE /* GEOSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FDF2472BA7A1C400952BEE = {
+			isa = PBXGroup;
+			children = (
+				52FDF2522BA7A1C400952BEE /* GeoTrove */,
+				52FDF2512BA7A1C400952BEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FDF2512BA7A1C400952BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FDF2502BA7A1C400952BEE /* GeoTrove.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FDF2522BA7A1C400952BEE /* GeoTrove */ = {
+			isa = PBXGroup;
+			children = (
+				52FDF27B2BACF87D00952BEE /* Extensions */,
+				52FDF2702BA7ADE000952BEE /* Views */,
+				52FDF26F2BA7ACAA00952BEE /* GeoTrove-Info.plist */,
+				52FDF2622BA7A22100952BEE /* Models */,
+				52FDF2532BA7A1C400952BEE /* GeoTroveApp.swift */,
+				52FDF2552BA7A1C400952BEE /* ContentView.swift */,
+				52FDF2572BA7A1C500952BEE /* Assets.xcassets */,
+				52FDF2592BA7A1C500952BEE /* GeoTrove.entitlements */,
+				52FDF25A2BA7A1C500952BEE /* Preview Content */,
+				5280795F2BB8B3FF00874FBA /* README.md */,
+			);
+			path = GeoTrove;
+			sourceTree = "<group>";
+		};
+		52FDF25A2BA7A1C500952BEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52FDF25B2BA7A1C500952BEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52FDF2622BA7A22100952BEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52FDF2642BA7A23600952BEE /* Field.swift */,
+				52FDF2632BA7A23600952BEE /* Layer.swift */,
+				52FDF2672BA7A46700952BEE /* DataFeature.swift */,
+				52FDF2772BA7BF3100952BEE /* LayerType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52FDF2702BA7ADE000952BEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52FDF2712BA7AE1700952BEE /* GTMapView.swift */,
+				52FDF2732BA7B52F00952BEE /* GTSettingsView.swift */,
+				52FDF2752BA7BAAD00952BEE /* AddLayerView.swift */,
+				52FDF2792BA7CDCD00952BEE /* GTLayerPickerView.swift */,
+				52FDF27E2BAF852100952BEE /* GTLayerSettingsView.swift */,
+				52FDF2802BAF91D600952BEE /* GTFieldSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52FDF27B2BACF87D00952BEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52FDF27C2BACF8A200952BEE /* GEOSwift+MapKit+SwiftUI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FDF24F2BA7A1C400952BEE /* GeoTrove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FDF25F2BA7A1C500952BEE /* Build configuration list for PBXNativeTarget "GeoTrove" */;
+			buildPhases = (
+				52FDF24C2BA7A1C400952BEE /* Sources */,
+				52FDF24D2BA7A1C400952BEE /* Frameworks */,
+				52FDF24E2BA7A1C400952BEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoTrove;
+			packageProductDependencies = (
+				52FDF26A2BA7A48400952BEE /* GEOSwift */,
+				52FDF26D2BA7A49500952BEE /* GEOSwiftMapKit */,
+			);
+			productName = "ResourceKeeper Liter";
+			productReference = 52FDF2502BA7A1C400952BEE /* GeoTrove.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FDF2482BA7A1C400952BEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					52FDF24F2BA7A1C400952BEE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 52FDF24B2BA7A1C400952BEE /* Build configuration list for PBXProject "GeoTrove" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FDF2472BA7A1C400952BEE;
+			packageReferences = (
+				52FDF2692BA7A48400952BEE /* XCRemoteSwiftPackageReference "GEOSwift" */,
+				52FDF26C2BA7A49500952BEE /* XCRemoteSwiftPackageReference "GEOSwiftMapKit" */,
+			);
+			productRefGroup = 52FDF2512BA7A1C400952BEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FDF24F2BA7A1C400952BEE /* GeoTrove */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FDF24E2BA7A1C400952BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FDF25C2BA7A1C500952BEE /* Preview Assets.xcassets in Resources */,
+				52FDF2582BA7A1C500952BEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FDF24C2BA7A1C400952BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FDF2812BAF91D600952BEE /* GTFieldSettingsView.swift in Sources */,
+				52FDF2782BA7BF3100952BEE /* LayerType.swift in Sources */,
+				52FDF2722BA7AE1700952BEE /* GTMapView.swift in Sources */,
+				52FDF27A2BA7CDCD00952BEE /* GTLayerPickerView.swift in Sources */,
+				52FDF2652BA7A23600952BEE /* Layer.swift in Sources */,
+				52FDF2562BA7A1C400952BEE /* ContentView.swift in Sources */,
+				52FDF2662BA7A23600952BEE /* Field.swift in Sources */,
+				52FDF27F2BAF852100952BEE /* GTLayerSettingsView.swift in Sources */,
+				52FDF2682BA7A46700952BEE /* DataFeature.swift in Sources */,
+				52FDF2542BA7A1C400952BEE /* GeoTroveApp.swift in Sources */,
+				52FDF2762BA7BAAD00952BEE /* AddLayerView.swift in Sources */,
+				52FDF27D2BACF8A200952BEE /* GEOSwift+MapKit+SwiftUI.swift in Sources */,
+				52FDF2742BA7B52F00952BEE /* GTSettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52FDF25D2BA7A1C500952BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52FDF25E2BA7A1C500952BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		52FDF2602BA7A1C500952BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = GeoTrove/GeoTrove.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/GeoTrove/Preview Content/Preview Assets.xcassets\"";
+				DEVELOPMENT_TEAM = AG76BK4REC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GeoTrove-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = GeoTrove;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to allow you to add data to the map and to show your location relative to the mapped data.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abstracttech.geotrove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FDF2612BA7A1C500952BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = GeoTrove/GeoTrove.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/GeoTrove/Preview Content/Preview Assets.xcassets\"";
+				DEVELOPMENT_TEAM = AG76BK4REC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GeoTrove-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = GeoTrove;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to allow you to add data to the map and to show your location relative to the mapped data.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abstracttech.geotrove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FDF24B2BA7A1C400952BEE /* Build configuration list for PBXProject "GeoTrove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FDF25D2BA7A1C500952BEE /* Debug */,
+				52FDF25E2BA7A1C500952BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FDF25F2BA7A1C500952BEE /* Build configuration list for PBXNativeTarget "GeoTrove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FDF2602BA7A1C500952BEE /* Debug */,
+				52FDF2612BA7A1C500952BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52FDF2692BA7A48400952BEE /* XCRemoteSwiftPackageReference "GEOSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GEOSwift/GEOSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.0;
+			};
+		};
+		52FDF26C2BA7A49500952BEE /* XCRemoteSwiftPackageReference "GEOSwiftMapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GEOSwift/GEOSwiftMapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52FDF26A2BA7A48400952BEE /* GEOSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52FDF2692BA7A48400952BEE /* XCRemoteSwiftPackageReference "GEOSwift" */;
+			productName = GEOSwift;
+		};
+		52FDF26D2BA7A49500952BEE /* GEOSwiftMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52FDF26C2BA7A49500952BEE /* XCRemoteSwiftPackageReference "GEOSwiftMapKit" */;
+			productName = GEOSwiftMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52FDF2482BA7A1C400952BEE /* Project object */;
+}

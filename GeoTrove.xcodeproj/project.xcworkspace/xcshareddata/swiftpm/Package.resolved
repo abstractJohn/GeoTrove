@@ -1,0 +1,33 @@
+{
+  "originHash" : "c355405fa75ae11d5202c53662b61980bf82ad24b0583c6d036dafd479ed4d1e",
+  "pins" : [
+    {
+      "identity" : "geos",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GEOSwift/geos.git",
+      "state" : {
+        "revision" : "f510e634c822116fca615064d889300dba40d761",
+        "version" : "8.1.0"
+      }
+    },
+    {
+      "identity" : "geoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GEOSwift/GEOSwift.git",
+      "state" : {
+        "revision" : "2d23ede8c82c067655d3a9f0221bc73f08cd399a",
+        "version" : "10.1.0"
+      }
+    },
+    {
+      "identity" : "geoswiftmapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GEOSwift/GEOSwiftMapKit",
+      "state" : {
+        "revision" : "3acdf05c60515337d38feb0c69388d074b63bd23",
+        "version" : "4.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
