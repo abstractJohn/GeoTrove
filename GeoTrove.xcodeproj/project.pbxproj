@@ -30,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5280795F2BB8B3FF00874FBA /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		52F477E62BBA331E00314AEE /* RadialMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialMenu.swift; sourceTree = "<group>"; };
 		52FDF2502BA7A1C400952BEE /* GeoTrove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTrove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDF2532BA7A1C400952BEE /* GeoTroveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTroveApp.swift; sourceTree = "<group>"; };
@@ -103,7 +102,6 @@
 				52FDF2572BA7A1C500952BEE /* Assets.xcassets */,
 				52FDF2592BA7A1C500952BEE /* GeoTrove.entitlements */,
 				52FDF25A2BA7A1C500952BEE /* Preview Content */,
-				5280795F2BB8B3FF00874FBA /* README.md */,
 			);
 			path = GeoTrove;
 			sourceTree = "<group>";
