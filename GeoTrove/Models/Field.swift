@@ -23,6 +23,13 @@ final class Field: Identifiable, Hashable, Codable {
         self.type = type
     }
 
+    init() {
+        self.id = UUID()
+        self.name = "New Field"
+        self.layers = []
+        self.type = .string
+    }
+
 
     enum CodingKeys: CodingKey {
         case _id
@@ -51,6 +58,7 @@ final class Field: Identifiable, Hashable, Codable {
 enum FieldType: String, Equatable, CaseIterable, Codable {
     case number = "Number"
     case boolean = "Boolean"
+    case date = "Date"
     case list = "List"
     case string = "Text"
     case document = "Document or Photo"

@@ -48,15 +48,15 @@ struct GTSettingsView: View {
         .fullScreenCover(isPresented: $displayAddSheet, onDismiss: {
                     displayAddSheet = false
                 }, content:{ AddLayerView {
-                    newName, newType in
-                    addLayer(name: newName, type: newType)
+                    newName, newType, image in
+                    addLayer(name: newName, type: newType, image: image)
                     displayAddSheet = false
                 }})
     }
 
-    private func addLayer(name: String, type: LayerType) -> Void {
+    private func addLayer(name: String, type: LayerType, image: String) -> Void {
             withAnimation {
-                let newLayer = Layer(name: name, type: type)
+                let newLayer = Layer(name: name, type: type, image: image)
                 modelContext.insert(newLayer)
             }
         }

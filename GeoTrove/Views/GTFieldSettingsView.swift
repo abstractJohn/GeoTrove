@@ -7,11 +7,23 @@
 
 import SwiftUI
 import SwiftData
+import AQUI
 
 struct GTFieldSettingsView: View {
     @State var field: Field
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                TextField("Name", text: Binding($field.name, "New Field"))
+                Picker("Layer Type", selection: Binding($field.type, .string)) {
+                    ForEach(FieldType.allCases, id: \.self) {value in
+                        Text(value.localizedName)
+                            .tag(value)
+                    }
+                }
+            }
+            .navigationTitle(Binding($field.name, "New Field"))
+        }
     }
 }
 

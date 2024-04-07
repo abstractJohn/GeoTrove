@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SystemImagePicker
 
 struct AddLayerView: View {
     @Environment(\.presentationMode) var presentationMode
         @State private var name: String = ""
     @State private var type: LayerType = .point
-        let onComplete: (String, LayerType) -> Void
+    @State private var image: String = ""
+    @State private var showingImages = false
+        let onComplete: (String, LayerType, String) -> Void
         var body: some View {
             NavigationView {
                 Form {
@@ -25,7 +28,17 @@ struct AddLayerView: View {
                             }
                         }
                         Button {
-                            onComplete(name,type)
+                            showingImages = true
+                        } label: {
+                            HStack {
+                                Text("Choose an Image")
+                                Spacer()
+                                Image(systemName: image)
+                                    .font(.title)
+                            }
+                        }.systemImagePicker(isPresented: $showingImages, selection: $image)
+                        Button {
+                            onComplete(name,type, image)
                         } label: {
                             Text("Add Layer")
                         }
@@ -47,6 +60,6 @@ struct AddLayerView: View {
 
 #Preview {
     AddLayerView() {
-        name, type  in
+        name, type, image  in
     }
 }

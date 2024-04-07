@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52F477E42BB901E000314AEE /* AQUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52F477E32BB901E000314AEE /* AQUI */; };
+		52F477E72BBA331E00314AEE /* RadialMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F477E62BBA331E00314AEE /* RadialMenu.swift */; };
+		52F477EA2BC2289E00314AEE /* SystemImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 52F477E92BC2289E00314AEE /* SystemImagePicker */; };
 		52FDF2542BA7A1C400952BEE /* GeoTroveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2532BA7A1C400952BEE /* GeoTroveApp.swift */; };
 		52FDF2562BA7A1C400952BEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDF2552BA7A1C400952BEE /* ContentView.swift */; };
 		52FDF2582BA7A1C500952BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FDF2572BA7A1C500952BEE /* Assets.xcassets */; };
@@ -28,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		5280795F2BB8B3FF00874FBA /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52F477E62BBA331E00314AEE /* RadialMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialMenu.swift; sourceTree = "<group>"; };
 		52FDF2502BA7A1C400952BEE /* GeoTrove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTrove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDF2532BA7A1C400952BEE /* GeoTroveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTroveApp.swift; sourceTree = "<group>"; };
 		52FDF2552BA7A1C400952BEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,12 +59,22 @@
 			files = (
 				52FDF26E2BA7A49500952BEE /* GEOSwiftMapKit in Frameworks */,
 				52FDF26B2BA7A48400952BEE /* GEOSwift in Frameworks */,
+				52F477E42BB901E000314AEE /* AQUI in Frameworks */,
+				52F477EA2BC2289E00314AEE /* SystemImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52F477E52BBA32E300314AEE /* RadialButton */ = {
+			isa = PBXGroup;
+			children = (
+				52F477E62BBA331E00314AEE /* RadialMenu.swift */,
+			);
+			path = RadialButton;
+			sourceTree = "<group>";
+		};
 		52FDF2472BA7A1C400952BEE = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +130,7 @@
 		52FDF2702BA7ADE000952BEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52F477E52BBA32E300314AEE /* RadialButton */,
 				52FDF2712BA7AE1700952BEE /* GTMapView.swift */,
 				52FDF2732BA7B52F00952BEE /* GTSettingsView.swift */,
 				52FDF2752BA7BAAD00952BEE /* AddLayerView.swift */,
@@ -153,6 +168,8 @@
 			packageProductDependencies = (
 				52FDF26A2BA7A48400952BEE /* GEOSwift */,
 				52FDF26D2BA7A49500952BEE /* GEOSwiftMapKit */,
+				52F477E32BB901E000314AEE /* AQUI */,
+				52F477E92BC2289E00314AEE /* SystemImagePicker */,
 			);
 			productName = "ResourceKeeper Liter";
 			productReference = 52FDF2502BA7A1C400952BEE /* GeoTrove.app */;
@@ -185,6 +202,8 @@
 			packageReferences = (
 				52FDF2692BA7A48400952BEE /* XCRemoteSwiftPackageReference "GEOSwift" */,
 				52FDF26C2BA7A49500952BEE /* XCRemoteSwiftPackageReference "GEOSwiftMapKit" */,
+				52F477E22BB901E000314AEE /* XCRemoteSwiftPackageReference "AQUI" */,
+				52F477E82BC2289E00314AEE /* XCRemoteSwiftPackageReference "SystemImagePicker" */,
 			);
 			productRefGroup = 52FDF2512BA7A1C400952BEE /* Products */;
 			projectDirPath = "";
@@ -223,6 +242,7 @@
 				52FDF2682BA7A46700952BEE /* DataFeature.swift in Sources */,
 				52FDF2542BA7A1C400952BEE /* GeoTroveApp.swift in Sources */,
 				52FDF2762BA7BAAD00952BEE /* AddLayerView.swift in Sources */,
+				52F477E72BBA331E00314AEE /* RadialMenu.swift in Sources */,
 				52FDF27D2BACF8A200952BEE /* GEOSwift+MapKit+SwiftUI.swift in Sources */,
 				52FDF2742BA7B52F00952BEE /* GTSettingsView.swift in Sources */,
 			);
@@ -459,6 +479,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		52F477E22BB901E000314AEE /* XCRemoteSwiftPackageReference "AQUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlanQuatermain/AQUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		52F477E82BC2289E00314AEE /* XCRemoteSwiftPackageReference "SystemImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sbertix/SystemImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		52FDF2692BA7A48400952BEE /* XCRemoteSwiftPackageReference "GEOSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GEOSwift/GEOSwift.git";
@@ -478,6 +514,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		52F477E32BB901E000314AEE /* AQUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F477E22BB901E000314AEE /* XCRemoteSwiftPackageReference "AQUI" */;
+			productName = AQUI;
+		};
+		52F477E92BC2289E00314AEE /* SystemImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F477E82BC2289E00314AEE /* XCRemoteSwiftPackageReference "SystemImagePicker" */;
+			productName = SystemImagePicker;
+		};
 		52FDF26A2BA7A48400952BEE /* GEOSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 52FDF2692BA7A48400952BEE /* XCRemoteSwiftPackageReference "GEOSwift" */;

@@ -22,10 +22,10 @@ struct GTLayerSettingsView: View {
                     Text("Fields")
                     Spacer()
                     Button {
-                        displayAddSheet = true
+                        addField()
                     } label: {
                         Image(systemName: "plus")
-                            .font(.body)
+                            .font(.title2)
                     }}) {
                     NavigationStack{
                         List {
@@ -44,17 +44,11 @@ struct GTLayerSettingsView: View {
             }
             .navigationTitle(layer.wrappedName)
         }
-        .fullScreenCover(isPresented: $displayAddSheet, onDismiss: {
-                    displayAddSheet = false
-                }, content:{ AddLayerView {
-                    newName, newType in
-                    addLayer(name: newName, type: newType)
-                    displayAddSheet = false
-                }})
     }
-    func addLayer(name:String, type: LayerType) {
-        let layer = Layer(name: name, type: type)
-        modelContext.insert(layer)
+    func addField() {
+        let field = Field()
+        field.layers?.append(layer)
+        modelContext.insert(field)
     }
 }
 

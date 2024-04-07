@@ -1,6 +1,15 @@
 {
-  "originHash" : "c355405fa75ae11d5202c53662b61980bf82ad24b0583c6d036dafd479ed4d1e",
+  "originHash" : "09c4042cb5d409852b71b69ec96cf8ae188184283a17eb9f2f16e46042bac5a5",
   "pins" : [
+    {
+      "identity" : "aqui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlanQuatermain/AQUI.git",
+      "state" : {
+        "revision" : "e1ced4a69915556a9af4c15791bb83eccc33e5b8",
+        "version" : "0.1.5"
+      }
+    },
     {
       "identity" : "geos",
       "kind" : "remoteSourceControl",
@@ -26,6 +35,15 @@
       "state" : {
         "revision" : "3acdf05c60515337d38feb0c69388d074b63bd23",
         "version" : "4.0.0"
+      }
+    },
+    {
+      "identity" : "systemimagepicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbertix/SystemImagePicker.git",
+      "state" : {
+        "revision" : "d03c81b326107a267e9644b31ee415cee072130c",
+        "version" : "0.1.0"
       }
     }
   ],
