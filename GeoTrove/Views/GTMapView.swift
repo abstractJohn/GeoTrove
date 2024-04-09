@@ -14,7 +14,7 @@ import GEOSwiftMapKit
 
 struct GTMapView: View {
     @Namespace var mapScope
-    let locationManager = CLLocationManager()
+    private let locationManager = CLLocationManager()
     @Environment(\.modelContext) private var modelContext
     @Query(filter: #Predicate<Layer> {
         layer in
@@ -52,7 +52,7 @@ struct GTMapView: View {
                         .frame(width: 77.5, height: 77.5)
                         .foregroundColor(Color.primary)
                         .background(Color.secondary)
-                        .opacity(0.75)
+                        .opacity(0.85)
                         .clipShape(Circle())
                 }
             }
@@ -62,17 +62,6 @@ struct GTMapView: View {
             RadialMenu(title: "Add", closedImage: Image(systemName: "plus.circle"), openImage: Image(systemName: "multiply.circle"), buttons: buttons, animation: .interactiveSpring(response: 0.4, dampingFraction: 0.6))
                 .buttonStyle(CustomButtonStyle())
         }
-    }
-    func photoTapped() {
-        print("Photo tapped")
-    }
-
-    func videoTapped() {
-        print("Video tapped")
-    }
-
-    func documentTapped() {
-        print("Document tapped")
     }
     func add(for layer: Layer) {
         print("Adding for layer \(layer.wrappedName)")

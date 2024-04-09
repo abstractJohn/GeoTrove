@@ -12,7 +12,6 @@ struct GTSettingsView: View {
     @Environment(\.modelContext) private var modelContext
     @Query var layers: [Layer]
     @State var name: String = ""
-    @State var displayAddSheet = false
     var body: some View {
         NavigationView {
             Form {
@@ -27,7 +26,7 @@ struct GTSettingsView: View {
                                     Text("Layers")
                                     Spacer()
                                     Button {
-                                        displayAddSheet = true
+                                        addLayer()
                                     } label: {
                                         Image(systemName: "plus")
                                             .font(.body)
@@ -36,7 +35,9 @@ struct GTSettingsView: View {
                     List {
                         ForEach(layers) {
                             layer in
-                            Text(layer.name ?? "")
+                            NavigationLink(layer.name ?? "New Layer") {
+                                GTLayerSettingsView(layer: layer)
+                            }
                         }
                         .onDelete(perform: deleteLayer)
 
@@ -45,18 +46,11 @@ struct GTSettingsView: View {
             }
             .navigationTitle("Settings")
         }
-        .fullScreenCover(isPresented: $displayAddSheet, onDismiss: {
-                    displayAddSheet = false
-                }, content:{ AddLayerView {
-                    newName, newType, image in
-                    addLayer(name: newName, type: newType, image: image)
-                    displayAddSheet = false
-                }})
     }
 
-    private func addLayer(name: String, type: LayerType, image: String) -> Void {
+    private func addLayer() -> Void {
             withAnimation {
-                let newLayer = Layer(name: name, type: type, image: image)
+                let newLayer = Layer()
                 modelContext.insert(newLayer)
             }
         }

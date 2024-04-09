@@ -7,17 +7,39 @@
 
 import SwiftUI
 import SwiftData
+import AQUI
 
 struct GTLayerSettingsView: View {
     @Environment(\.modelContext) private var modelContext
     @State var layer: Layer
     @State var displayAddSheet = false
+    @State var showingImages = false
     init(layer:Layer) {
         self.layer = layer
     }
     var body: some View {
         NavigationView {
             Form {
+                Section {
+                    TextField("Layer Name", text: Binding($layer.name, "New Layer"))
+                        .submitLabel(.done)
+                    Picker("Layer Type", selection: Binding($layer.type, .point)) {
+                        ForEach(LayerType.allCases, id: \.self) {value in
+                            Text(value.localizedName)
+                                .tag(value)
+                        }
+                    }
+                    Button {
+                        showingImages = true
+                    } label: {
+                        HStack {
+                            Text("Choose an Image")
+                            Spacer()
+                            Image(systemName: layer.image ?? "multiply.circle")
+                                .font(.title)
+                        }
+                    }.systemImagePicker(isPresented: $showingImages, selection: $layer.image)
+                }
                 Section(header: HStack{
                     Text("Fields")
                     Spacer()
@@ -27,27 +49,24 @@ struct GTLayerSettingsView: View {
                         Image(systemName: "plus")
                             .font(.title2)
                     }}) {
-                    NavigationStack{
                         List {
                             ForEach(layer.fields ?? []) {
                                 field in
-                                NavigationLink(field.name ?? "", value: field)
+                                NavigationLink(field.name ?? "") {
+                                    GTFieldSettingsView(field: field)
+                                }
 
                             }
                         }
-                        .navigationDestination(for: Field.self) { field in
-                            GTFieldSettingsView(field: field)
-                        }
                     }
 
-                }
             }
             .navigationTitle(layer.wrappedName)
         }
     }
     func addField() {
         let field = Field()
-        field.layers?.append(layer)
+        layer.fields?.append(field)
         modelContext.insert(field)
     }
 }

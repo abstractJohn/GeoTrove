@@ -15,7 +15,7 @@ struct GTFieldSettingsView: View {
         NavigationView {
             Form {
                 TextField("Name", text: Binding($field.name, "New Field"))
-                Picker("Layer Type", selection: Binding($field.type, .string)) {
+                Picker("Field Type", selection: Binding($field.type, .string)) {
                     ForEach(FieldType.allCases, id: \.self) {value in
                         Text(value.localizedName)
                             .tag(value)

@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             GTSettingsView()
-                .tabItem { Label("Settings", systemImage: "gear") }
+                .tabItem { Label("Settings", systemImage: "gearshape.fill") }
             
             GTMapView()
                 .tabItem { Label("Map", systemImage: "map.circle") }
